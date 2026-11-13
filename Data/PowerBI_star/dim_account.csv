@@ -1,0 +1,100 @@
+﻿AccountKey,ParentAccountKey,AccountDescription,AccountType,Operator
+1,,Balance Sheet,,~
+2,1,Assets,Assets,+
+3,2,Current Assets,Assets,+
+4,3,Cash,Assets,+
+5,3,Receivables,Assets,+
+6,5,Trade Receivables,Assets,+
+7,5,Other Receivables,Assets,+
+8,3,Allowance for Bad Debt,Assets,+
+9,3,Inventory,Assets,+
+10,9,Raw Materials,Assets,+
+11,9,Work in Process,Assets,+
+12,9,Finished Goods,Assets,+
+13,3,Deferred Taxes,Assets,+
+14,3,Prepaid Expenses,Assets,+
+15,3,Intercompany Receivables,Assets,+
+17,2,"Property, Plant, Equipment",Assets,+
+18,17,Land & Improvements,Assets,+
+19,17,Buildings & Improvements,Assets,+
+20,17,Machinery & Equipment,Assets,+
+21,17,Office Furniture & Equipment,Assets,+
+22,17,Leasehold Improvements,Assets,+
+23,17,Construction In Progress,Assets,+
+24,2,Other Assets,Assets,+
+25,1,Liabilities and Owners Equity,Liabilities,-
+26,25,Liabilities,Liabilities,+
+27,26,Current Liabilities,Liabilities,+
+28,27,Notes Payable,Liabilities,+
+29,27,Accounts Payable,Liabilities,+
+30,27,Accrued Expenses,Liabilities,+
+31,30,Salary & Other Comp,Liabilities,+
+32,30,Insurance,Liabilities,+
+33,30,Warranties,Liabilities,+
+34,27,Intercompany Payables,Liabilities,+
+35,27,Other Current Liabilities,Liabilities,+
+36,26,Long Term Liabilities,Liabilities,+
+37,36,Long Term Obligations,Liabilities,+
+38,36,Pension Liability,Liabilities,+
+39,36,Other Retirement Benefits,Liabilities,+
+40,36,Other Long Term Liabilities,Liabilities,+
+41,25,Owners Equity,Liabilities,+
+42,41,Partner Capital,Liabilities,+
+43,41,Additional Paid In Capital,Liabilities,+
+44,41,Retained Earnings,Liabilities,+
+45,44,Prior Year Retained Earnings,Liabilities,+
+46,44,Current Retained Earnings,Liabilities,+
+47,,Net Income,Revenue,+
+48,47,Operating Profit,Revenue,+
+49,48,Gross Margin,Revenue,+
+50,49,Net Sales,Revenue,+
+51,50,Gross Sales,Revenue,+
+52,51,Intercompany Sales,Revenue,+
+53,50,Returns and Adjustments,Expenditures,-
+54,50,Discounts,Expenditures,-
+55,49,Total Cost of Sales,Expenditures,-
+56,55,Standard Cost of Sales,Expenditures,+
+57,55,Variances,Expenditures,+
+58,48,Operating Expenses,Expenditures,-
+59,58,Labor Expenses,Expenditures,+
+60,59,Salaries,Expenditures,+
+61,59,Payroll Taxes,Expenditures,+
+62,59,Employee Benefits,Expenditures,+
+63,58,Commissions,Expenditures,+
+64,58,Travel Expenses,Expenditures,+
+65,64,Travel Transportation,Expenditures,+
+66,64,Travel Lodging,Expenditures,+
+67,64,Meals,Expenditures,+
+68,64,Entertainment,Expenditures,+
+69,64,Other Travel Related,Expenditures,+
+70,58,Marketing,Expenditures,+
+71,70,Conferences,Expenditures,+
+72,70,Marketing Collateral,Expenditures,+
+73,58,Office Supplies,Expenditures,+
+74,58,Professional Services,Expenditures,+
+75,58,Telephone and Utilities,Expenditures,+
+76,75,Telephone,Expenditures,+
+77,75,Utilities,Expenditures,+
+78,58,Other Expenses,Expenditures,+
+79,58,Depreciation,Expenditures,+
+80,79,Building Leasehold,Expenditures,+
+81,79,Vehicles,Expenditures,+
+82,79,Equipment,Expenditures,+
+83,79,Furniture and Fixtures,Expenditures,+
+84,79,Other Assets,Expenditures,+
+85,79,Amortization of Goodwill,Expenditures,+
+87,58,Rent,Expenditures,+
+88,47,Other Income and Expense,Revenue,+
+89,88,Interest Income,Revenue,+
+90,88,Interest Expense,Expenditures,-
+91,88,Gain/Loss on Sales of Asset,Revenue,+
+92,88,Other Income,Revenue,+
+93,88,Curr Xchg Gain/(Loss),Revenue,+
+94,47,Taxes,Expenditures,-
+95,,Statistical Accounts,Statistical,~
+96,95,Headcount,Balances,~
+97,95,Units,Flow,~
+98,95,Average Unit Price,Balances,~
+99,95,Square Footage,Balances,~
+100,27,Current Installments of Long-term Debt,Liabilities,+
+101,51,Trade Sales,Revenue,+

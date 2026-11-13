@@ -1,0 +1,15 @@
+﻿OrganizationKey,OrganizationName,ParentOrganizationKey
+1,AdventureWorks Cycle,
+2,North America Operations,1
+3,Northeast Division,14
+4,Northwest Division,14
+5,Central Division,14
+6,Southeast Division,14
+7,Southwest Division,14
+8,Canadian Division,2
+9,European Operations,1
+10,Pacific Operations,1
+11,France,9
+12,Germany,9
+13,Australia,10
+14,USA Operations,2
