@@ -18,8 +18,8 @@ The project includes two interactive Power BI dashboards designed to turn financ
 | Resource | Description |
 |---|---|
 | [Download Power BI Report (.pbix)](Power%20BI/Revenue_Margin_Intelligence.pbix) | Complete interactive two-page Power BI report |
-| [Financial Performance Dashboard](Images/financial_performance.png) | Actual versus budget analysis |
-| [Revenue & Profitability Dashboard](Images/revenue_profitability.png) | Sales trends, gross margin, and product profitability |
+| [Financial Performance Dashboard](Images/financial-performance-dashboard.png) | Actual versus budget analysis |
+| [Revenue & Profitability Dashboard](Images/revenue-profitability-dashboard.png) | Sales trends, gross margin, and product profitability |
 | [Prepared Datasets](Data/PowerBI_star) | Nine financial and sales reporting tables |
 
 **How to explore:** Download the `.pbix` file and open it in Microsoft Power BI Desktop. Use the reporting-period, account, and product slicers to investigate the results.
@@ -54,7 +54,7 @@ The dashboards use separate financial and sales datasets with different historic
 
 # 1. Financial Performance Overview
 
-![Financial Performance Overview](Images/financial_performance.png)
+![Financial Performance Overview](Images/financial-performance-dashboard.png)
 
 ## Business Question
 
@@ -129,7 +129,7 @@ By highlighting account-level contributions to financial variance, it supports m
 
 # 2. Revenue & Profitability Overview
 
-![Revenue & Profitability Overview](Images/revenue_profitability.png)
+![Revenue & Profitability Overview](Images/revenue-profitability-dashboard.png)
 
 ## Business Question
 
@@ -450,8 +450,8 @@ revenue-margin-intelligence/
 |-- README.md
 |
 |-- Images/
-|   |-- financial_performance.png
-|   |-- revenue_profitability.png
+|   |-- financial-performance-dashboard.png
+|   |-- revenue-profitability-dashboard.png
 |
 |-- Power BI/
 |   |-- Revenue_Margin_Intelligence.pbix
