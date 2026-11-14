@@ -1,15 +1,15 @@
 
 # Revenue & Margin Intelligence
 
-### Financial Performance, Profitability Analysis & Business Intelligence
+### Financial Performance, Budget Variance & Product Profitability Analysis
 
-**Power BI | DAX | SQL | Python | Financial Analytics | Data Modeling**
+**Power BI | DAX | Data Modeling | Financial Analytics | Business Intelligence**
 
-An end-to-end business intelligence project exploring financial performance, revenue trends, budget variances, and product profitability using Microsoft's AdventureWorksDW sample data.
+A financial business intelligence project using Microsoft's AdventureWorksDW sample data to analyze revenue performance, budget variances, gross profit, and product-level profitability.
 
-The project transforms financial and transactional sales records into two interactive Power BI dashboards designed to support business decision-making.
+The project includes two interactive Power BI dashboards designed to turn financial and transactional data into actionable business insights.
 
-**The objective:** Go beyond reporting what happened by identifying financial performance gaps, understanding their significance, and translating analytical findings into actionable business insights.
+**The objective:** Move beyond reporting financial totals to identify performance gaps, understand profitability patterns, and help business stakeholders determine where further investigation is needed.
 
 ---
 
@@ -17,98 +17,139 @@ The project transforms financial and transactional sales records into two intera
 
 | Resource | Description |
 |---|---|
-| [Download Power BI Report](Power%20BI/Revenue_Margin_Intelligence.pbix) | Interactive two-page Power BI report |
-| [Financial Performance Dashboard](Images/financial_performance.png) | Actual vs. budget analysis |
-| [Revenue & Profitability Dashboard](Images/revenue_profitability.png) | Sales trends and product profitability |
-| [Prepared Datasets](Data/PowerBI_star) | Financial and sales reporting tables |
+| [Download Power BI Report (.pbix)](Power%20BI/Revenue_Margin_Intelligence.pbix) | Complete interactive two-page Power BI report |
+| [Financial Performance Dashboard](Images/financial_performance.png) | Actual versus budget analysis |
+| [Revenue & Profitability Dashboard](Images/revenue_profitability.png) | Sales trends, gross margin, and product profitability |
+| [Prepared Datasets](Data/PowerBI_star) | Nine financial and sales reporting tables |
 
-**To explore the interactive dashboards:** Download the `.pbix` file and open it in Power BI Desktop. Use the reporting-period, account, and product slicers to investigate the results.
+**How to explore:** Download the `.pbix` file and open it in Microsoft Power BI Desktop. Use the reporting-period, account, and product slicers to investigate the results.
 
-A public browser-based version is not currently available.
+The report is currently distributed as a Power BI Desktop file rather than a publicly hosted interactive dashboard.
 
 ---
 
 ## Project Overview
 
-Finance and commercial teams need more than financial totals. Effective reporting should explain:
+Financial and commercial teams need reporting that answers more than "What happened?"
 
-- How actual financial performance compares with expectations.
-- Where budget variances are concentrated.
-- Whether revenue growth translates into higher profitability.
-- Which products generate the greatest financial contribution.
-- How business stakeholders can investigate performance independently.
+Effective business intelligence should help determine:
 
-This project addresses these questions through two complementary reporting perspectives.
+- How actual financial performance compares with budget.
+- Which accounts contribute most to financial shortfalls.
+- How revenue and profitability develop over time.
+- Which products contribute the greatest gross profit.
+- Whether financial performance is consistent across reporting periods.
+- Where management should focus further investigation.
+
+This project addresses these questions through two complementary dashboards.
 
 | Dashboard | Primary Business Question |
 |---|---|
-| Financial Performance | Where is revenue falling short of budget, and why should management investigate? |
-| Revenue & Profitability | How are revenue, gross profit, and margins developing, and which products contribute most? |
+| Financial Performance Overview | Where is revenue falling short of budget, and which accounts explain the gap? |
+| Revenue & Profitability Overview | How are revenue, gross profit, and margins developing, and which products contribute most? |
 
-The dashboards use separate financial and sales datasets with different reporting periods. Their results are not presented as a single reconciled income statement.
+The dashboards use separate financial and sales datasets with different historical reporting periods. Their totals are not presented as a single reconciled financial statement.
 
 ---
 
-# Dashboard 1: Financial Performance Overview
+# 1. Financial Performance Overview
 
 ![Financial Performance Overview](Images/financial_performance.png)
 
-### Business Question
+## Business Question
 
-**How does revenue compare with budget, and which financial accounts contribute most to the variance?**
+**How does actual revenue compare with budget, and where are the largest financial performance gaps?**
 
-The dashboard combines actual and budgeted financial records across matched reporting dates.
+This dashboard compares actual and budgeted financial performance across matched reporting dates.
 
-Interactive features allow users to filter by reporting period and revenue account while keeping financial KPIs and variance charts synchronized.
+It combines financial KPIs, time-based comparisons, and account-level variance analysis to provide a management-oriented view of revenue performance.
 
-### Key Financial Results
+### Dashboard Features
+
+- Actual revenue KPI
+- Budgeted revenue KPI
+- Absolute budget variance
+- Percentage budget variance
+- Actual versus budget comparison by reporting period
+- Revenue shortfall by account
+- Interactive reporting-period and account slicers
+
+## Key Financial Results
 
 | KPI | Result |
 |---|---:|
 | Actual Revenue | $16,882,125 |
 | Budgeted Revenue | $18,658,200 |
-| Revenue Variance | -$1,776,075 |
-| Revenue Variance % | -9.52% |
+| Budget Variance | -$1,776,075 |
+| Budget Variance % | -9.52% |
 
-*Scope: USD, selected revenue accounts, and matched financial reporting dates in 2010–2011.*
+**Reporting scope:** USD financial records, selected revenue accounts, and matched actual/budget reporting dates during 2010–2011.
 
-### Key Findings
+### Finding 1: Revenue Underperformed Against Budget
 
-**1. Revenue performed below budget.**
+Actual revenue was approximately **9.52% below budget**, representing a financial shortfall of approximately **$1.78 million**.
 
-Actual revenue was approximately **9.52% below budget**, representing a shortfall of approximately **$1.78 million** within the selected reporting scope.
+This indicates a material deviation from the expected revenue performance within the selected reporting scope.
 
-**2. The revenue gap was highly concentrated.**
+### Finding 2: The Revenue Gap Was Highly Concentrated
 
-Trade Sales contributed approximately **$1.72 million** to the shortfall, representing roughly **97% of the total revenue gap**.
+The account-level analysis showed that approximately:
 
-Intercompany Sales contributed approximately $0.06 million.
+| Account | Revenue Shortfall |
+|---|---:|
+| Trade Sales | $1.72M |
+| Intercompany Sales | $0.06M |
+| Total | $1.78M |
 
-**3. Management attention should prioritize the largest variance drivers.**
+Approximately **97% of the overall revenue shortfall was concentrated in Trade Sales**.
 
-Rather than treating the shortfall as equally distributed across all revenue accounts, the analysis identifies Trade Sales as the primary area requiring further investigation.
+This concentration suggests that treating the variance as a general financial underperformance issue would be less informative than investigating its largest contributor.
 
-### Business Implication
+### Finding 3: The Largest Variance Deserves Priority
 
-A finance team reviewing these results could prioritize understanding the Trade Sales variance before designing corrective actions.
+The analysis provides a starting point for prioritizing financial investigations.
 
-Potential follow-up investigations could examine sales volume, pricing, customer demand, or changes in business conditions.
+A finance or commercial team could explore whether the Trade Sales shortfall is associated with:
 
-**Important:** These are proposed investigation areas, not proven causes of the shortfall.
+- Changes in sales volume
+- Pricing differences
+- Customer demand
+- Product mix
+- Business or market conditions
+
+These are potential investigation areas, not confirmed causes of the variance.
+
+## Business Implication
+
+The dashboard helps management move from identifying a revenue shortfall to identifying where investigative effort may have the greatest value.
+
+By highlighting account-level contributions to financial variance, it supports more focused performance reviews and follow-up analysis.
 
 ---
 
-# Dashboard 2: Revenue & Profitability Overview
+# 2. Revenue & Profitability Overview
 
 ![Revenue & Profitability Overview](Images/revenue_profitability.png)
 
-### Business Question
+## Business Question
 
-**How are sales and profitability evolving, and which products contribute most to gross profit?**
+**How are sales revenue, gross profit, and margins evolving, and which products make the greatest contribution to profitability?**
 
-This dashboard analyzes transactional sales data through four financial KPIs, monthly performance trends, and an interactive product profitability matrix.
+This dashboard analyzes transactional sales data using aggregated financial measures, monthly trends, and product-level comparisons.
 
-### Key Financial Results
+### Dashboard Features
+
+- Sales revenue KPI
+- Product cost KPI
+- Gross profit KPI
+- Gross margin percentage KPI
+- Monthly revenue and gross profit trends
+- Monthly gross margin trends
+- Product-level profitability matrix
+- Conditional formatting for gross margin comparisons
+- Interactive reporting-period and product slicers
+
+## Key Financial Results
 
 | KPI | Result |
 |---|---:|
@@ -117,23 +158,35 @@ This dashboard analyzes transactional sales data through four financial KPIs, mo
 | Gross Profit | 12,055,330.71 |
 | Gross Margin | 41.13% |
 
-*Scope: Selected single-currency sales records, 2011–2013. Figures are shown in the underlying reporting currency.*
+**Reporting scope:** Historical transactional sales data during 2011–2013, using a single-currency reporting scope.
 
-### Key Findings
+The values above are expressed in the underlying dataset's reporting currency.
 
-**1. Revenue and gross profit increased substantially during 2013.**
+### Finding 1: Revenue and Gross Profit Increased During 2013
 
-The monthly trend analysis shows higher reported sales and gross profit toward the end of 2013 than in earlier reporting periods.
+The monthly trend analysis showed substantially higher reported revenue and gross profit toward the end of 2013 compared with earlier reporting periods.
 
-**2. Profitability did not move identically to revenue.**
+Viewing these measures together provides a more informative perspective than revenue alone.
 
-Monthly gross margin fluctuated around 40–42%, demonstrating why revenue growth alone is insufficient to evaluate commercial performance.
+### Finding 2: Gross Margin Did Not Move Identically to Revenue
 
-**3. Product-level profitability provides a different perspective from sales rankings.**
+Monthly gross margin varied over time, generally around the low-40% range.
 
-The product matrix identifies individual products generating substantial gross profit and allows users to compare their profit contributions and margin percentages.
+The analysis demonstrates that higher sales revenue does not automatically translate into a proportionate improvement in profitability.
 
-For example, **Mountain-200 Black, 46** generated approximately:
+This distinction is important when evaluating commercial performance because revenue growth and margin performance answer different business questions.
+
+### Finding 3: Product Profitability Differs from Sales Volume
+
+The product profitability matrix allows stakeholders to evaluate products using:
+
+- Sales revenue
+- Gross profit
+- Gross margin percentage
+
+The matrix is sorted by gross profit contribution and uses conditional formatting to make relative margin performance easier to interpret.
+
+One example is **Mountain-200 Black, 46**:
 
 | Metric | Result |
 |---|---:|
@@ -141,53 +194,66 @@ For example, **Mountain-200 Black, 46** generated approximately:
 | Gross Profit | 626,621.57 |
 | Gross Margin | 45.62% |
 
-Its gross margin was approximately **4.5 percentage points above** the overall reported margin of 41.13%.
+This product's margin was approximately **4.49 percentage points above** the overall reported gross margin of 41.13%.
 
-### Business Implication
+The example illustrates why product contribution and margin percentage should be evaluated together.
 
-Products with high revenue do not necessarily have the highest profitability rates.
+## Business Implication
 
-Analyzing both gross profit and margin can help stakeholders prioritize product-level investigations, evaluate commercial performance, and understand differences in financial contribution.
+The dashboard helps stakeholders distinguish between products generating substantial revenue, products generating substantial gross profit, and products achieving stronger margins.
 
-Changes in pricing, sales mix, and costs would require further analysis before attributing specific causes to the observed margin patterns.
+Potential follow-up analyses could investigate product mix, pricing, discounting, and product costs.
+
+The dashboard identifies performance patterns; establishing the causes of those patterns would require additional data and analysis.
 
 ---
 
-# Technical Implementation
+# 3. Technical Implementation
 
-## 1. Data Preparation and Modeling
+## Data Source
 
-The project uses financial and transactional data derived from Microsoft's AdventureWorksDW sample database.
+The project uses Microsoft's AdventureWorksDW sample data.
 
-The reporting model includes two separate fact tables:
+The original data was transformed into reporting-ready CSV tables organized around financial and sales analysis.
 
-**Financial Reporting**
+The Power BI report uses separate fact tables with shared supporting dimensions.
+
+### Financial Reporting Fact Table
 
 `fact_finance_paired`
 
-Contains matched actual and budget observations with:
+This table contains matched actual and budget observations with financial reporting identifiers and measures.
 
-- Reporting dates
-- Organizational and departmental identifiers
-- Financial account identifiers
-- Currency identifiers
-- Actual financial amounts
-- Budgeted financial amounts
-- Signed variance amounts
+Relevant fields include:
 
-**Sales Reporting**
+- DateKey
+- OrganizationKey
+- DepartmentGroupKey
+- AccountKey
+- CurrencyKey
+- RawActualAmount
+- RawBudgetAmount
+- SignedActualAmount
+- SignedBudgetAmount
+- SignedVarianceAmount
+
+The paired structure supports comparison of actual and budgeted amounts within consistent reporting contexts.
+
+### Sales Reporting Fact Table
 
 `fact_sales`
 
-Contains transactional sales information used for:
+This table supports transactional sales analysis, including:
 
-- Sales revenue analysis
-- Product cost analysis
-- Gross profit calculations
+- Sales revenue
+- Product costs
+- Gross profit
 - Product-level profitability
 - Monthly financial trends
 
-Supporting dimensions include:
+### Supporting Dimension Tables
+
+The reporting model includes:
 
 - `dim_date`
 - `dim_currency`
@@ -197,15 +263,17 @@ Supporting dimensions include:
 - `dim_product`
 - `dim_territory`
 
-The Power BI model uses many-to-one relationships, with dimension tables filtering the relevant fact tables.
+The model uses many-to-one relationships, allowing dimensions to filter the relevant financial and sales facts.
 
-Financial and sales fact tables are deliberately kept separate because they represent different analytical scopes.
+This structure supports reusable measures, consistent reporting filters, and separation of financial and commercial reporting scopes.
 
-## 2. Financial Measures Using DAX
+---
 
-Reusable DAX measures were developed to ensure consistency across KPI cards, charts, and interactive selections.
+# 4. Financial Measures Using DAX
 
-### Financial Performance
+Reusable DAX measures were created to calculate financial KPIs across interactive report contexts.
+
+## Financial Performance Measures
 
 ```dax
 Total Actual =
@@ -224,7 +292,11 @@ Revenue Budget Gap =
 [Total Budget] - [Total Actual]
 ```
 
-### Revenue & Profitability
+The absolute variance calculation compares actual performance with budget.
+
+The percentage calculation expresses the difference relative to budget, allowing the financial shortfall to be interpreted proportionally.
+
+## Revenue & Profitability Measures
 
 ```dax
 Sales Revenue =
@@ -240,92 +312,137 @@ Gross Margin % =
 DIVIDE([Gross Profit], [Sales Revenue])
 ```
 
-The gross margin calculation divides aggregated gross profit by aggregated revenue rather than averaging individual product margins.
+Gross margin is calculated using aggregated gross profit and aggregated revenue.
 
-This ensures that the reported total correctly reflects the weighted financial result.
-
-## 3. Interactive Reporting
-
-The dashboards provide:
-
-- Dynamic financial KPI cards
-- Reporting-period dropdown slicers
-- Revenue account and product filtering
-- Actual-versus-budget comparisons
-- Financial variance analysis
-- Monthly revenue and gross profit trends
-- Gross margin trend analysis
-- Product-level profitability matrices
-- Conditional formatting for relative margin comparisons
-
-Users can explore different periods, accounts, and products while the relevant financial measures update automatically.
+This approach avoids the misleading result that can arise from simply averaging individual product margin percentages.
 
 ---
 
-# Data Quality and Analytical Validation
+# 5. Interactive Reporting and Filter Design
 
-Financial BI requires more than correct-looking charts. Reliable results depend on consistent financial definitions, appropriate filtering, and clear reporting boundaries.
+The dashboards were designed to allow stakeholders to investigate results without modifying the underlying data model.
 
-The project addresses several analytical challenges.
+## Reporting-Period Filtering
 
-### Matched Financial Reporting Dates
+The original date dimension contained dates without corresponding fact records.
 
-The financial dashboard uses dates for which matching actual and budget observations are available.
+Using those dates directly in slicers could expose reporting periods with no available observations.
 
-It does not treat absent budgets as zero or present its results as complete annual financial statements.
+To restrict the available selections to periods represented in the financial dataset, a calculated column was created in the financial fact table:
 
-### Currency Consistency
+```dax
+FinanceReportingPeriod =
+RELATED('dim_date'[YearMonthLabel])
+```
 
-The financial dashboard is restricted to USD.
+The financial reporting-period slicer uses this fact-level field.
 
-The sales dashboard uses a single-currency reporting scope.
+The sales reporting-period slicer follows the same approach:
 
-Amounts in different currencies are not aggregated into misleading combined totals.
+```dax
+SalesReportingPeriod =
+RELATED('dim_date'[YearMonthLabel])
+```
 
-### Financial Sign Conventions
+This ensures that the available slicer selections correspond to reporting periods represented in each respective fact table.
 
-The financial dashboard uses the prepared signed actual and budget measures to maintain a consistent reporting convention.
+## Account and Product Filtering
 
-### Reconciled KPI Calculations
+The Financial Performance dashboard allows analysis by revenue account.
 
-Dashboard calculations were checked for consistency between:
+The Revenue & Profitability dashboard allows users to investigate individual products and examine their financial contribution.
 
-- Actual, budget, and variance
-- Revenue, product cost, and gross profit
-- Gross profit and gross margin percentage
-
-### Reporting-Period Coverage
-
-The sales dashboard currently presents historical activity through December 2013.
-
-January 2014 was excluded from the displayed analysis because its available reported revenue was dramatically below preceding months. Final confirmation of transaction-period completeness remains outstanding.
-
-This avoids presenting an unverified partial-period effect as a genuine collapse in commercial performance.
-
-### Remaining Reproducibility Work
-
-The repository currently contains the Power BI report and prepared reporting tables.
-
-The upstream preparation scripts and detailed automated validation outputs are not yet included in this published version. Adding those materials is a planned improvement to technical reproducibility.
+These interactive controls enable more focused investigation while maintaining consistent KPI calculations.
 
 ---
 
-# Tools and Skills Demonstrated
+# 6. Data Quality and Analytical Validation
 
-| Area | Skills |
+A central objective of this project was producing financial reporting that could be interpreted reliably.
+
+Several design decisions were made to address reporting accuracy and transparency.
+
+## Actual and Budget Comparability
+
+Financial actual and budget values were paired using matching reporting identifiers and dates.
+
+The resulting analysis is limited to comparable observations rather than treating missing budget records as zero.
+
+## Currency Consistency
+
+The Financial Performance dashboard applies a USD filter using `CurrencyKey = 100`.
+
+The commercial sales analysis uses a single-currency reporting scope.
+
+Different currencies are not combined into one misleading financial total.
+
+## Financial Sign Conventions
+
+Financial actual and budget values use the prepared signed amount fields.
+
+This maintains a consistent convention for financial reporting and variance calculations.
+
+## Calculation Consistency
+
+The financial measures support reconciliation of the displayed relationships:
+
+**Financial performance**
+
+```text
+Budget Variance = Actual Revenue - Budgeted Revenue
+Budget Variance % = Budget Variance / Budgeted Revenue
+```
+
+**Commercial profitability**
+
+```text
+Gross Profit = Sales Revenue - Product Cost
+Gross Margin % = Gross Profit / Sales Revenue
+```
+
+These definitions make the reporting logic transparent and support consistent interpretation.
+
+## Historical Reporting Coverage
+
+The sales dataset contains a small amount of activity in January 2014.
+
+The dashboard currently focuses on 2011–2013 because January 2014 contains substantially less reported revenue than preceding months.
+
+The completeness of the January 2014 transaction period has not yet been independently confirmed.
+
+Excluding that period prevents a potentially incomplete observation from being interpreted as a genuine commercial collapse.
+
+## Separate Reporting Scopes
+
+The financial and sales dashboards are not intended to reconcile directly.
+
+They use different source facts, reporting periods, and analytical definitions.
+
+The financial dashboard analyzes selected revenue actual/budget observations, while the commercial dashboard analyzes transactional revenue and product cost.
+
+Presenting these as distinct analytical perspectives avoids implying that their totals constitute a unified financial statement.
+
+---
+
+# 7. Business Intelligence Skills Demonstrated
+
+| Area | Skills Demonstrated |
 |---|---|
-| Business Intelligence | Power BI dashboards, KPI development, interactive reporting |
-| Financial Analytics | Budget variance, revenue, gross profit, margin analysis |
-| Data Modeling | Relational schemas, fact and dimension tables, filter relationships |
-| DAX | Measures, ratios, financial calculations, filter context |
-| Data Preparation | Structured datasets, data cleaning, reporting transformations |
-| Analytical Validation | Calculation reconciliation, currency consistency, reporting-scope checks |
-| Business Communication | Interpreting findings, identifying investigation priorities, documenting limitations |
-| Supporting Analytics | SQL and Python-based data preparation workflows |
+| Financial Analytics | Budget variance, revenue analysis, gross profit, gross margin |
+| Business Intelligence | KPI development, management reporting, interactive dashboards |
+| Power BI | Report design, filtering, visual relationships, financial measures |
+| DAX | Aggregations, calculated measures, ratios, filter context |
+| Data Modeling | Fact and dimension tables, relational modeling, reporting relationships |
+| Data Preparation | Reporting-ready datasets, structured financial records |
+| Data Quality | Scope consistency, currency filtering, date coverage, calculation checks |
+| Analytical Communication | Interpreting financial results and identifying investigation priorities |
+| Business Decision Support | Turning performance differences into focused analytical questions |
+
+The project demonstrates a combination of technical implementation and business-oriented analytical reasoning.
 
 ---
 
-# Repository Structure
+# 8. Repository Structure
 
 ```text
 revenue-margin-intelligence/
@@ -352,55 +469,67 @@ revenue-margin-intelligence/
         |-- dim_territory.csv
 ```
 
-## Running the Project
+The repository currently contains the completed Power BI report, dashboard screenshots, and prepared reporting tables.
+
+The upstream data preparation scripts and automated validation outputs are not included in this version.
+
+These are potential future additions to improve reproducibility.
+
+---
+
+# 9. How to Run the Project
 
 1. Clone or download this repository.
 2. Install Microsoft Power BI Desktop.
 3. Open `Power BI/Revenue_Margin_Intelligence.pbix`.
-4. If prompted to reconnect data sources, update the CSV file paths to the local `Data/PowerBI_star` folder.
-5. Navigate between the two report pages.
-6. Use the slicers and product matrix to explore the analytical results.
+4. If Power BI requests updated data source locations, reconnect the CSV sources to the local `Data/PowerBI_star` folder.
+5. Navigate between the Financial Performance and Revenue & Profitability pages.
+6. Use the interactive slicers to investigate reporting periods, revenue accounts, and products.
 
-The dashboard screenshots provide a static preview without requiring Power BI Desktop.
+**Note:** The report is designed for Power BI Desktop. GitHub can store and distribute the `.pbix` file but cannot render its interactive contents directly.
+
+Both dashboard screenshots are available in the `Images` folder for immediate viewing.
 
 ---
 
-# Project Limitations
+# 10. Project Limitations
 
-This project uses **Microsoft AdventureWorks sample data** and does not represent a live business engagement.
+This is a portfolio project using historical Microsoft sample data, not an analysis of a live commercial organization.
 
 Important limitations include:
 
-- Financial actual/budget comparisons cover selected matched dates, not complete financial years.
-- The finance and sales datasets have different reporting periods and are not directly reconciled to each other.
-- January 2014 is excluded from the sales analysis pending final transaction-coverage verification.
-- The reported gross profit measure excludes costs beyond recorded product costs.
-- The analysis identifies patterns and possible investigation priorities, not verified causal explanations.
-- No commercial savings, realized profit improvements, or operational outcomes are claimed.
+- Financial budget comparisons cover selected matched reporting dates in 2010–2011, not complete annual financial statements.
+- Financial and commercial sales data are analyzed separately and are not directly reconciled.
+- The sales dashboard currently covers 2011–2013, excluding January 2014 pending transaction-completeness verification.
+- Gross profit reflects recorded product costs and does not include all operating expenses.
+- Financial findings identify patterns and potential investigation areas rather than verified causal explanations.
+- No realized cost savings, revenue improvements, or operational outcomes are claimed.
+- The repository does not yet contain the complete upstream preparation and validation workflow.
 
-The purpose is to demonstrate analytical methodology, financial BI skills, and business-oriented interpretation.
+These limitations are documented to maintain transparency about what the analysis can and cannot establish.
 
 ---
 
-# Key Takeaways
+# 11. Key Takeaways
 
-This project demonstrates the ability to:
+This project demonstrates my ability to:
 
-1. Translate financial business questions into measurable KPIs.
-2. Structure relational data into usable BI reporting models.
-3. Develop dynamic Power BI dashboards using DAX.
-4. Investigate budget variances and commercial profitability.
-5. Identify financially significant patterns and exceptions.
-6. Apply data-quality controls and recognize reporting limitations.
-7. Communicate findings in a form useful to business stakeholders.
+1. Translate business questions into measurable financial KPIs.
+2. Build relational reporting models using fact and dimension tables.
+3. Create reusable DAX measures for financial reporting.
+4. Design interactive Power BI dashboards for different stakeholders.
+5. Analyze financial variances and identify their largest contributors.
+6. Evaluate commercial profitability through revenue, gross profit, and margin.
+7. Recognize data-quality issues and document reporting limitations.
+8. Communicate analytical results in a business-oriented way.
 
-**The central principle of the project is that financial reporting should not stop at showing performance. It should help stakeholders understand where to investigate and what decisions the data can support.**
+**The central principle of this project is that effective business intelligence should help stakeholders understand not only what happened, but also where to investigate and what decisions the available evidence can support.**
 
 ---
 
 # Data Source
 
-Microsoft AdventureWorks Sample Databases
+**Microsoft AdventureWorks Sample Databases**
 
 https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure
 
